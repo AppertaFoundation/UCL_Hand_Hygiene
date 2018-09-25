@@ -1,0 +1,57 @@
+page-bbe1 {
+
+.aligncenter
+{
+  text-align: center;
+}
+
+.alignleft
+{
+	text-align: left;
+}
+
+.alignright
+{
+	text-align: right;
+}
+
+.customSelected {
+    z-index: 10;
+    background: #DFE8F6 !important;
+}
+.ng-invalid {
+	border: 1px solid red;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body,td,th {
+	font-size: 14px;
+	margin: 0;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	display: table;
+	margin-bottom: 0;
+	margin-top: 0;
+	-moz-box-sizing: border-box;
+	text-indent: 0;
+}
+
+a:link,a:visited,a:hover {
+	color: #5D6DB6;
+	text-decoration: none;
+}
+
+.error {
+	color: red;
+}
+
+.ui-helper-hidden {
+	display: none;
+}
+}

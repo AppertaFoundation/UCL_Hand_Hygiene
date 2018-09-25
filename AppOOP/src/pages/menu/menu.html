@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter">Main Menu</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+   <ion-item>
+    <ion-label color="primary">Selected Ward</ion-label>
+    <ion-input placeholder="Coleridge"></ion-input> <!-- this should be from the database-->
+   </ion-item>
+
+    <ion-item>
+    <ion-label color="primary">Selected Directorate</ion-label>
+    <ion-input placeholder="Acute Medicine"></ion-input> <!-- this should be from the database-->
+   </ion-item>
+
+   <ion-item>
+    <ion-label color="primary">Auditor</ion-label>
+    <ion-input placeholder="Nurse Smith"></ion-input> <!-- this should be from the database-->
+   </ion-item>
+
+   <ion-item>
+    <ion-label color="primary">Date</ion-label>
+    <ion-input placeholder="mm/dd/yyyy"></ion-input> <!-- this should be from the database-->
+   </ion-item>
+</ion-list>
+   
+    <p class="aligncenter">
+        Month of last audit: <b>February</b>. <!-- this should be from the database-->
+    </p>
+
+    <p class="aligncenter">
+        <button ion-button (click)="seetrends();"> Ward Trend </button>
+       <!-- <button ion-button> Continue Previous </button> -->
+        <button ion-button (click)="newaudit();"> New Audit </button>
+    </p>
+
+</ion-content>

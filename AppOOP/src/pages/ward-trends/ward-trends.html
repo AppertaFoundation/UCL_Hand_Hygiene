@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter">Ward Trends</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <button ion-button (click)="closewtrend();"> Close </button>
+    <ion-card>
+        <ion-card-header>
+            *insert ward name here*
+        </ion-card-header>
+        <ion-card-content>
+            <canvas #lineCanvas></canvas>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

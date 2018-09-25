@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter"> Nurses/ Midwives/ HCA (inc.students) </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-list>
+   <ion-item>
+    <ion-label color="primary">Total No of staff on ward<br>BBE at the start of the audit</ion-label>
+    <ion-input type="number" value=""></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label color="primary">Total No of staff on ward<br>at the start of the audit</ion-label>
+    <ion-input type="number" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Percentage</ion-label>
+    <ion-input type="percent" value=""></ion-input> <!-- this should be from the database (calculated automaticaly with the values^ !!!!!!PERCENT TYPE -->
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Insert Comment here.."></ion-input>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+ </ion-list>
+
+ <button ion-button (click)="savebb1();"> Save </button>
+
+ </ion-content>

@@ -1,0 +1,114 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter">Hand Hygiene Audit Tool</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <h3 class="aligncenter">Welcome!</h3>
+
+    <p class="aligncenter">
+        Please fill in the details below:
+    </p>
+    <ion-list id="ward-list">
+        <ion-item>
+            <ion-label>Select Ward</ion-label>
+
+            <ion-select [(ngModel)]="ward">
+
+                <ion-option value ="ward1">A&E</ion-option>
+                <ion-option value="ward2">Acorn</ion-option>
+                <ion-option value="ward3">AMU</ion-option>
+                <ion-option value="ward4">Antenatal Clinic</ion-option>
+                <ion-option value="ward5">Audiology</ion-option>
+                <ion-option value="ward6">Barrington</ion-option>
+                <ion-option value="ward7">Beacon</ion-option>
+                <ion-option value="ward8">Beacon Day Unit</ion-option>
+                <ion-option value="ward9">Beacon OPD</ion-option>
+                <ion-option value="ward10">Beacon Radiotherapy</ion-option>
+                <ion-option value="ward11">Birthing Centre, Bridgwater</ion-option>
+                <ion-option value="ward12">Blake</ion-option>
+                <ion-option value="ward13">Bracken</ion-option>
+                <ion-option value="ward14">Breast Cancer Care</ion-option>
+                <ion-option value="ward15">Cardiology</ion-option>
+                <ion-option value="ward16">Cath Lab</ion-option>
+                <ion-option value="ward17">CCU</ion-option>
+                <ion-option value="ward18">Children's Assessment Unit</ion-option>
+                <ion-option value="ward19">Children's OPD</ion-option>
+                <ion-option value="ward20">Coleridge</ion-option>
+                <ion-option value="ward21">Conservators</ion-option>
+                <ion-option value="ward22">Diagnostic Imaging</ion-option>
+                <ion-option value="ward23">DSU-Theatres</ion-option>
+                <ion-option value="ward24">DSU-Ward</ion-option>
+                <ion-option value="ward25">Dunkery</ion-option>
+                <ion-option value="ward26">Eliot</ion-option>
+                <ion-option value="ward27">Endoscopy</ion-option>
+                <ion-option value="ward28">ENT OPD</ion-option>
+                <ion-option value="ward29">Exmoor</ion-option>
+                <ion-option value="ward30">Fern</ion-option>
+                <ion-option value="ward31">Fielding</ion-option>
+                <ion-option value="ward32">General OPD</ion-option>
+                <ion-option value="ward33">General Theatres</ion-option>
+                <ion-option value="ward34">Gould</ion-option>
+                <ion-option value="ward35">Grace Centre</ion-option>
+                <ion-option value="ward36">GUM</ion-option>
+                <ion-option value="ward37">Head & Neck Theatres</ion-option>
+                <ion-option value="ward38">Hestercombe</ion-option>
+                <ion-option value="ward39">ITU/HDU</ion-option>
+                <ion-option value="ward40">Labour Ward</ion-option>
+                <ion-option value="ward41">Lung Lab</ion-option>
+                <ion-option value="ward42">Lydeard</ion-option>
+                <ion-option value="ward43">Max Fax Unit</ion-option>
+                <ion-option value="ward44">Medical Day Unit</ion-option>
+                <ion-option value="ward45">Montacute</ion-option>
+                <ion-option value="ward46">Oak</ion-option>
+                <ion-option value="ward47">Ophthalmic OPD</ion-option>
+                <ion-option value="ward48">Orthodontics</ion-option>
+                <ion-option value="ward49">Orthopaedic OPD</ion-option>
+                <ion-option value="ward50">Orthopaedic Theatres</ion-option>
+                <ion-option value="ward51">Paediatric HDU</ion-option>
+                <ion-option value="ward52">Parkside</ion-option>
+                <ion-option value="ward53">Physiotherapy</ion-option>
+                <ion-option value="ward54">POAC</ion-option>
+                <ion-option value="ward55">Portman</ion-option>
+                <ion-option value="ward56">PUVA</ion-option>
+                <ion-option value="ward57">SAU</ion-option>
+                <ion-option value="ward58">Sheppard</ion-option>
+                <ion-option value="ward59">SNICU</ion-option>
+                <ion-option value="ward60">Surgical Admissions Lounge</ion-option>
+                <ion-option value="ward61">Surgical Investigation Unit</ion-option>
+                <ion-option value="ward62">Triscombe</ion-option>
+                <ion-option value="ward63">Ward9</ion-option>
+                <ion-option value="ward64">Willow</ion-option>
+                <ion-option value="ward65">Wordsworth</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Select Directorate</ion-label>
+            <ion-select [(ngModel)]="directorate">
+                <ion-option value="directorate1">Acute Medicine</ion-option>
+                <ion-option value="directorate2">W&C</ion-option>
+                <ion-option value="directorate3">Acute Surgery/Critical Care</ion-option>
+                <ion-option value="directorate4">HOPE</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+
+    <ion-item>
+        <ion-input type="text" placeholder="Auditor's Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+
+     <p class="aligncenter">
+        <button ion-button (click)="submit();"> Submit </button>
+    </p>
+
+</ion-content>
+  

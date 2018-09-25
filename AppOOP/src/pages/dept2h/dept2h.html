@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter"> Medical Staff </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<form>
+Indication:
+<br/>
+<input type ="radio" name="indication"/> Before Patient Contact
+<br/>
+<input type ="radio" name="indication"/> Before Aseptic Task
+<br/>
+<input type ="radio" name="indication"/> After Body Fluid Exposure
+<br/>
+<input type ="radio" name="indication"/> After Patient Contact
+<br/>
+<input type ="radio" name="indication"/> After Contact With the Patient’s Environment
+<br/>
+<br/>
+Action:
+<br/>
+<input type ="radio" name="action"/> Taken
+<br/>
+<input type ="radio" name="action"/> Missed
+<br/>
+<input type ="radio" name="action"/> Feedback
+<br/>
+<br/>
+</form>
+
+<ion-item>
+    <ion-input placeholder="Insert Comment here.."></ion-input>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+ <button ion-button (click)="savehh2();"> Save </button>
+
+ </ion-content>

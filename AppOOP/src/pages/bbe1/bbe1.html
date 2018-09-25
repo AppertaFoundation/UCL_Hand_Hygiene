@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter">BBE Audit</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<p class="aligncenter"><b> Choose Department for BBE Audit: </b></p>
+
+<p class="aligncenter">
+<button ion-button (click)="dept1b();"> Nurses/ Midwives/ HCA<br/> (including students) </button><br/>
+
+<button ion-button (click)="dept2b();"> Medical Staff </button><br/>
+
+<button ion-button (click)="dept3b();"> Allied Health Professionals<br/> (including students) </button><br/>
+
+<button ion-button (click)="dept4b();"> WA/ HK/ Porters/Others </button><br/>
+</p>
+
+<p class="aligncenter"><br/><br/><b> Press the button below to finish the<br/> BBE Audit and start the HH Audit:</b></p>
+<p class="aligncenter"><button ion-button (click)="submitBBE();"> Submit BBE Audit </button></p>
+</ion-content>
+

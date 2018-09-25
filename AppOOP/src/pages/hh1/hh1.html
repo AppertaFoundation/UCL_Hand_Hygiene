@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="aligncenter">Hand Hygiene Audit</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<p class="aligncenter"><b> Choose Department for HH Audit: </b></p>
+
+<p class="aligncenter">
+<button ion-button (click)="dept1h();"> Nurses/ Midwives/ HCA<br/> (including students) </button><br/>
+
+<button ion-button (click)="dept2h();"> Medical Staff </button><br/>
+
+<button ion-button (click)="dept3h();"> Allied Health Professionals<br/> (including students) </button><br/>
+
+<button ion-button (click)="dept4h();"> WA/ HK/ Porters/Others </button><br/>
+</p>
+
+<p class="aligncenter"><br><br><b> Press the button below to finish the HH Audit:</b></p>
+<p class="aligncenter"><button ion-button (click)="submitHH();"> Submit HH Audit </button></p> 
+
+</ion-content>
+

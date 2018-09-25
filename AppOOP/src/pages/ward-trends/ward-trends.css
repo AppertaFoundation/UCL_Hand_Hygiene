@@ -1,0 +1,11 @@
+page-ward-trends {
+    .scroll-content {
+        background-color: map-get($colors, light);
+    }
+    .aligncenter {
+        text-align: center;
+    }
+    ion-card-header {
+        font-weight: bold;
+    }
+}
